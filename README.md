@@ -35,6 +35,7 @@
 
 ## Heap
 | label | x0 | return (x0) | description |
+| - | - | - | - |
 | prepare | | | prepares heap for allocations |
 | clear | | | deallocates all the heap at once |
 | allocate | int size | void* ptr | allocates <size> bytes in heap and returns the pointer |
