@@ -18,6 +18,9 @@
 
 * your heap needs to be according with the documentation below
 
+# Are there any examples?
+* yes, there are! the "test/" directory contains two tests with source code in assembly and the AArch64 executable
+
 # Documentation
 ## Linked List
 | label | x0 | x1 | x2 | return (x0) | description |
