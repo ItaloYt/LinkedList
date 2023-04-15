@@ -20,15 +20,24 @@
 
 # Documentation
 ## Linked List
-|    label    |     x0     |      x1     |     x2    | return (x0) |           description           |
+| label | x0 | x1 | x2 | return (x0) | description |
 | - | - | - | - | - | - |
 | create | | | | void* ptr | allocates a linked list in heap |
-|     free    | void* list |             |           |             | free the linked list <list> and its elements(doesn't free values) |
-|     push    | void* list | void* value |           |             | adds a element with value <value> in the end of linked list <list> |
-|    insert   | void* list | void* value | int index |             | inserts a element with value <value> at <index> in the linked list <list> |
-|    remove   | void* list |  int index  |           |             | removes the element at <index> in the linked list <list> |
-| removeValue | void* list | void* value |           |             | removes the element with value <value> in the linked list <list> |
-|     get     | void* list |  int index  |           | void* value | returns the element(at <index>)'s value |
-|     find    | void* list | void* value |           |  int index  | returnd the element(with value <value>)'s index |
+| free | void* list | | | | free the linked list <list> and its elements(doesn't free values) |
+| push | void* list | void* value | | | adds a element with value <value> in the end of linked list <list> |
+| insert | void* list | void* value | int index | | inserts a element with value <value> at <index> in the linked list <list> |
+| remove | void* list | int index | | | removes the element at <index> in the linked list <list> |
+| removeValue | void* list | void* value | | | removes the element with value <value> in the linked list <list> |
+| get | void* list | int index | | void* value | returns the element(at <index>)'s value |
+| find | void* list | void* value | | int index | returnd the element(with value <value>)'s index |
 
-## 
+* all the linked list labels starts with the prefix "linkedlist_". Example: `linkedlist_create`
+
+## Heap
+| label | x0 | return (x0) | description |
+| prepare | | | prepares heap for allocations |
+| clear | | | deallocates all the heap at once |
+| allocate | int size | void* ptr | allocates <size> bytes in heap and returns the pointer |
+| free | void* ptr | | deallocates the pointer <ptr>
+
+* all the heap labels starts with the prefix "heap_". Example: `heap_prepare`
