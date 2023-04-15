@@ -16,6 +16,17 @@
 ~ $ ls main.o heap.o linkedlist_srd/linkedlist.o -o main
 ```
 
+* your heap needs to be according with the documentation below
+
 # Documentation
-----------------
-test |    1    |
+## Linked List
+|    label    |     x0     |      x1     |     x2    | return (x0) |           description           |
+| ----------- | ---------- | ----------- | --------- | -----------| ------------------------------- |
+|    create   |            |             |           |  void* ptr  | allocates a linked list in heap |
+|     free    | void* list |             |           |             | free the linked list <list> and its elements(doesn't free values) |
+|     push    | void* list | void* value |           |             | adds a element with value <value> in the end of linked list <list> |
+|    insert   | void* list | void* value | int index |             | inserts a element with value <value> at <index> in the linked list <list> |
+|    remove   | void* list |  int index  |           |             | removes the element at <index> in the linked list <list> |
+| removeValue | void* list | void* value |           |             | removes the element with value <value> in the linked list <list> |
+|     get     | void* list |  int index  |           | void* value | returns the element(at <index>)'s value |
+|     find    | void* list | void* value |           |  int index  | returnd the element(with value <value>)'s index |
